@@ -1,24 +1,24 @@
 # Rocky Linux 8 Docker Image with systemd
 
-[![Build](https://github.com/eniocarboni/docker-rockylinux-systemd/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/eniocarboni/docker-rockylinux-systemd/actions/workflows/build.yml) [![GPL License](https://img.shields.io/badge/license-GPL-blue.svg)](https://www.gnu.org/licenses/) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/EnioCarboni)
+[![Build](https://github.com/eniocarboni/docker-rockylinux-systemd/actions/workflows/build.yml/badge.svg?branch=8)](https://github.com/eniocarboni/docker-rockylinux-systemd/actions/workflows/build.yml) [![GPL License](https://img.shields.io/badge/license-GPL-blue.svg)](https://www.gnu.org/licenses/) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/EnioCarboni)
 
 Rocky Linux 8 Docker container with systemd, useful for tests with `ansible` especially with `molecule`
 
 ## Tags
 
-  - `8`, `latest` on [main branch](https://github.com/eniocarboni/docker-rockylinux-systemd)
+  - `8` on [8 branch](https://github.com/eniocarboni/docker-rockylinux-systemd/tree/8)
 
 
 ## How to Build
 
   * Verify if [Docker is installed](https://docs.docker.com/install/).
-  * Run on main branch: `docker build -t docker-rockylinux-systemd:8 -t docker-rockylinux-systemd:latest .`
+  * Run on main branch: `docker build -t docker-rockylinux-systemd:8 .`
   * Verify image: `docker images`
 
 ## How to Use
 
-  * `docker pull eniocarboni/docker-rockylinux-systemd:latest` (or use the image you built earlier).
-  * `docker run --detach --privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro eniocarboni/docker-rockylinux-systemd:latest`
+  * `docker pull eniocarboni/docker-rockylinux-systemd:8` (or use the image you built earlier).
+  * `docker run --detach --privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro eniocarboni/docker-rockylinux-systemd:8`
 
 View the run container with
 
