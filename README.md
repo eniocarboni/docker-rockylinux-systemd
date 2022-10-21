@@ -1,18 +1,19 @@
-# Rocky Linux 8 Docker Image with systemd
+# Rocky Linux 9 Docker Image with systemd
 
 [![Build](https://github.com/eniocarboni/docker-rockylinux-systemd/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/eniocarboni/docker-rockylinux-systemd/actions/workflows/build.yml) [![GPL License](https://img.shields.io/badge/license-GPL-blue.svg)](https://www.gnu.org/licenses/) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/EnioCarboni)
 
-Rocky Linux 8 Docker container with systemd, useful for tests with `ansible` especially with `molecule`
+Rocky Linux 9 Docker container with systemd, useful for tests with `ansible` especially with `molecule`
 
 ## Tags
 
-  - `8`, `latest` on [main branch](https://github.com/eniocarboni/docker-rockylinux-systemd)
+  - `9`, `latest` on [main branch](https://github.com/eniocarboni/docker-rockylinux-systemd)
+  - `8` on [8 branch](https://github.com/eniocarboni/docker-rockylinux-systemdi/tree/8)
 
 
 ## How to Build
 
   * Verify if [Docker is installed](https://docs.docker.com/install/).
-  * Run on main branch: `docker build -t docker-rockylinux-systemd:8 -t docker-rockylinux-systemd:latest .`
+  * Run on main branch: `docker build -t docker-rockylinux-systemd:9 -t docker-rockylinux-systemd:latest .`
   * Verify image: `docker images`
 
 ## How to Use

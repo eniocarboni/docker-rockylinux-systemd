@@ -1,4 +1,4 @@
-FROM rockylinux/rockylinux:8
+FROM rockylinux/rockylinux:9
 ENV container docker
 # see https://hub.docker.com/r/rockylinux/rockylinux
 RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == \
