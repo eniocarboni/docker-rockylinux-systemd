@@ -1,7 +1,7 @@
 FROM rockylinux:9
 ENV container docker
 # see https://hub.docker.com/_/rockylinux
-RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == \
+RUN ([ -d /lib/systemd/system/sysinit.target.wants ] && cd /lib/systemd/system/sysinit.target.wants/ && for i in *; do [ $i == \
 systemd-tmpfiles-setup.service ] || rm -f $i; done); \
 rm -f /lib/systemd/system/multi-user.target.wants/*;\
 rm -f /etc/systemd/system/*.wants/*;\
