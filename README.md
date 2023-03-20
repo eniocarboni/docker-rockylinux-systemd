@@ -19,7 +19,7 @@ Rocky Linux 9 Docker container with systemd, useful for tests with `ansible` esp
 ## How to Use
 
   * `docker pull eniocarboni/docker-rockylinux-systemd:latest` (or use the image you built earlier).
-  * `docker run --detach --privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro eniocarboni/docker-rockylinux-systemd:latest`
+  * `docker run --detach --privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:rw --cgroupns=host eniocarboni/docker-rockylinux-systemd:latest`
 
 View the run container with
 
